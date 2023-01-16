@@ -1,3 +1,81 @@
-body {
-  font-family: 'Inter', sans-serif;
+:root {
+  --blue: #61DAFB;
+  --darkest: #21222A;
+  --dark: #282D35;
+  --light: #DEEBF8;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#root {
+  padding: 2rem;
+}
+
+/*=============================================
+=            Navigation section            =
+=============================================*/
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1em;
+  background: var(--darkest);
+  padding: 2em 1.6em;
+}
+
+.nav--title {
+  margin-right: auto;
+  padding-inline: 0.3em;
+  font-size: 1.4rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.nav--subtitle {
+  color: var(--light);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/*=====  End of Navigation section  ======*/
+
+
+/*=============================================
+=            Main section            =
+=============================================*/
+
+main {
+  background-color: var(--dark);
+  background-image: url(./images/reactjs-icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: left 140% bottom 50%;
+  padding: 3.5em 1.6em;
+  color: #fff;
+}
+
+.main--title {
+  font-size: 2.4rem;
+  margin-block: 0;
+}
+
+.main--facts {
+  list-style-position: inside;
+  padding: 2.8em 1.5em;
+}
+
+/*=====  End of Main section  ======*/

@@ -1,5 +1,4 @@
 import React from "react";
-import BgImg from "../images/reactjs-icon-2.svg";
 
 export default function Main() {
   return (
@@ -12,7 +11,6 @@ export default function Main() {
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
-      {/* <img src={BgImg} alt="Large React logo" className="main--bg-img" /> */}
     </main>
   );
 }

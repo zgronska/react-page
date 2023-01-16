@@ -17,11 +17,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--light);
 
 }
 
 #root {
   padding: 2rem;
+}
+
+.app-container {
+  max-width: 33rem;
 }
 
 /*=============================================
@@ -76,6 +81,15 @@ main {
 .main--facts {
   list-style-position: inside;
   padding: 2.8em 1.5em;
+}
+
+.main--facts > li {
+  padding-block: 0.6em;
+}
+
+.main--facts > li::marker {
+  font-size: 1.6em;
+  color: var(--blue);
 }
 
 /*=====  End of Main section  ======*/
